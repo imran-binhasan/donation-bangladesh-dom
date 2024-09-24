@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh -</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header Section -->
+     <header class="sticky bg-[#F9F7F3] top-0  backdrop-blur-xl">
+        <!-- Nav -->
+        <div class="navbar  w-5/6 py-5 mx-auto">
+            <div class="navbar-start">
+                <button id="blog" class="btn btn-sm md:btn-md bg-[#B4F461] py-2 px-8 text-lg font-semibold">Blog</button>
+            </div>
+            <div class="navbar-center space-x-3">
+                <div class="flex items-center space-x-1">
+                    <img class="w-[20px] md:w-[30px]" src="assets/logo.png" alt="logo">
+                    <h1 class=" text-sm sm:text-lg md:text-2xl font-semibold">Donate Bangladesh</h1>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="navbar-end space-x-3">
+                <div class="flex items-center space-x-1">
+                    <img class="w-[15px] md:w-[30px]" src="assets/coin.png" alt="coin">
+                    <h2 class="text-sm sm:text-lg md:text-xl font-semibold text-zinc-600"><span id="balance">14700 </span> BDT</h2>
+                </div>
+            </div>
+             
+        </div>
+     </header>
+
+     <main class="w-5/6 mx-auto">
+        <h1 class="text-3xl font-bold my-6 flex items-center" >Important FAQ <img class="ml-2" width="30" height="30" src="https://img.icons8.com/ios/50/ask-question--v1.png" alt="ask-question--v1"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+          </svg>
+          </h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border py-3">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)</div>
+              <div class="collapse-content">
+                <p>DOM is a programming interface that allows us to create, change, or remove elements from the document. We can also add events to these elements to make our page more dynamic. It defines the logical structure of documents and the way a document is accessed and manipulated</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border py-3">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>To select an element from the DOM (Document Object Model) in JavaScript, there are several methods : <br>
+                    1.getElementById : Select an element using Id <br>
+                    2.getElementByClassName : Selects elements by their class name. This returns a live HTMLCollection.<br>
+                    3.getElementByTagName : Select elements by their tag name. This also returns a live HTMLCollection.<br>
+                    4.querySelectorAll: Selects all elements that match a CSS selector, returning a static NodeList.<br>
+                A few more options are available.However this 4 are the most common methods !
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border py-3">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the DOM, and why is it
+                useful?</div>
+              <div class="collapse-content">
+                <p>Event delegation is a technique used in the DOM to handle events on a group of elements by attaching a single event listener to a parent element, rather than attaching individual event listeners to each element. This approach takes advantage of the fact that events bubble up the DOM tree, allowing the parent element to capture and handle events triggered by its child elements.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border py-3">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium"> How do you manipulate an element's attributes and styles using the
+                    DOM?</div>
+                <div class="collapse-content">
+                  <p>The DOM provides several methods for manipulating the properties and styles of an element. Some common ways to do this are getAttribute, setAttribute, style, removeAttribute etc. We can manipulate element's attributes through these methods.</p>
+                </div>
+              </div>
+          </div>
+     </main>
