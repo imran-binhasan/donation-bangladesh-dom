@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header Section -->
+     <header class="sticky top-0 bg-transparent backdrop-blur-sm">
+        <!-- Nav -->
+        <div class="navbar bg-base-100 bg-[#F9F7F3] lg:px-28">
+            <div class="navbar-start">
+                <button class="btn btn-sm md:btn-md bg-[#B4F461] py-2 px-5">Blog</button>
+            </div>
+            <div class="navbar-center space-x-3">
+                <div class="flex items-center space-x-1">
+                    <img class="w-[20px] md:w-[30px]" src="assets/logo.png" alt="logo">
+                    <h1 class=" text-sm sm:text-lg md:text-2xl font-semibold">Donate Bangladesh</h1>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="navbar-end space-x-3">
+                <div class="flex items-center space-x-1">
+                    <img class="w-[15px] md:w-[30px]" src="assets/coin.png" alt="coin">
+                    <h2 class="text-sm sm:text-lg md:text-2xl font-semibold"><span id="balance">5500 </span> BDT</h2>
+                </div>
+            </div>
+             
+        </div>
+        <!-- Sticky Content -->
+         <div class="flex justify-center gap-4 pt-6 pb-3 lg:pt-10 lg:pb-6 sticky">
+            <div>
+                <button class="btn btn-sm md:btn-md bg-[#B4F461] py-2 px-5">Donation</button>
+            </div>
+            <div>
+                <button class="btn btn-sm md:btn-md py-2 px-5">History</button>
+            </div>
+         </div>
+     </header>
+     <!-- Main Section -->
+      <main class="w-4/5 mx-auto">
+
+        <!-- Feedback Section -->
+<div id="notification" class="hidden border card bg-base-100 w-96 h-64 shadow-xl fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div class="card-body flex flex-col items-center">
+        <h2 class="text-2xl font-semibold">Congrats</h2>
+        <div class="flex items-center space-x-1">
+            <img src="assets/coin.png">
+             <span>
+                <span id="popup-amount">
+                </span> 
+                TK
+            </span>
+        </div>
+        <p>You have donated for humankind</p>
+        <h3>Successfully</h3>
+        <button id="popup-close" class="btn">Close</button>
+    </div>
+  </div>
+        <!-- Card 1-->
+        <div class="flex lg:flex-row flex-col justify-center items-center border rounded-xl p-6 lg:space-x-1 space-x-3">
+            <div class="flex-1">
+                <img src="assets/noakhali.png" alt="">
+            </div>
+            <div class="flex-1 w-full lg:space-y-6 sm:space-y-2 my-auto">
+                <button class="shadow-md btn my-2 btn-sm lg:btn-md">
+                    <img src="assets/coin.png" alt="">
+                    <h3 class="font-semibold"><span id="flood1-balance">10600</span> BDT</h3>
+                </button>
+                <h2 class="md:text-xl text-lg font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <input id="input-flood1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-2" />
+                <br>
+                <button id="btn-flood1" class="btn w-full bg-[#B4F461]">Donate Now</button>
+            </div>
+        </div>
+
+
+
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>
