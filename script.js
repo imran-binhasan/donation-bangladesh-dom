@@ -113,8 +113,11 @@ document.getElementById('popup-close').addEventListener('click',function(){
 
 // Blog Section
 document.getElementById('blog').addEventListener('click',function(){
-    window.location.href = '/blog.html'
+    window.location.href = 'blog.html';
 })
+
+
+
 //Donation History
 document.getElementById('history-btn').addEventListener('click',function()
 {
@@ -139,4 +142,3 @@ document.getElementById('donation-btn').addEventListener('click',function()
 
     
 })
-
