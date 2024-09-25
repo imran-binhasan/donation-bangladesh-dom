@@ -16,9 +16,9 @@ document.getElementById('btn-flood1').addEventListener('click',function(){
     let balance = parseFloat(getTextById('balance'));
     let inputAmount = parseFloat(getValueById('input-flood1'));
     let donatedBalance = parseFloat(getTextById('flood1-balance'));
-    const eventName = 'Flood Relif in Noakhali, Bangladesh';
-    if(isNaN(inputAmount)){
-        alert('Not a number');
+    const eventName = 'Donate for Flood at Noakhali, Bangladesh';
+    if(isNaN(inputAmount) || inputAmount<=0){
+        alert('Invaild Amount');
         return
     }else if(balance<inputAmount){
             alert ('Insufficient Balance');
@@ -33,8 +33,8 @@ document.getElementById('btn-flood1').addEventListener('click',function(){
         document.getElementById('notification').classList.remove('hidden');
         const historyItem = document.createElement('div');
         historyItem.classList.add('border', 'p-4', 'rounded-xl', 'px-4', 'space-y-2');
-        historyItem.innerHTML=` <h3 class='font-bold'> ${inputAmount} is Donated at ${eventName} </h3>
-        <p>Date : ${date}</p>`
+        historyItem.innerHTML=` <h3 class='font-bold'> ${inputAmount} Taka is Donated for ${eventName} </h3>
+        <p class='bg-slate-100 border rounded p-2'>Date : ${date}</p>`
         document.getElementById('history-section').appendChild(historyItem);
         
 
@@ -48,9 +48,9 @@ document.getElementById('btn-flood1').addEventListener('click',function(){
         let balance = parseFloat(getTextById('balance'));
         let inputAmount = parseFloat(getValueById('input-flood2'));
         let donatedBalance = parseFloat(getTextById('flood2-balance'));
-        const eventName = 'Flood Relif in Feni, Bangladesh';
-        if(isNaN(inputAmount)){
-            alert('Not a number');
+        const eventName = 'Donate for Flood Relief in Feni,Bangladesh';
+        if(isNaN(inputAmount) || inputAmount<=0){
+            alert('Invaild Amount');
             return
         }else if(balance<inputAmount){
                 alert ('Insufficient Balance');
@@ -67,8 +67,8 @@ document.getElementById('btn-flood1').addEventListener('click',function(){
             
             const historyItem = document.createElement('div');
             historyItem.classList.add('border', 'p-4', 'rounded-xl', 'px-4', 'space-y-2');
-            historyItem.innerHTML=` <h3 class='font-bold'> ${inputAmount} is Donated at ${eventName} </h3>
-            <p>Date : ${date}</p>`
+            historyItem.innerHTML=` <h3 class='font-bold'> ${inputAmount} Taka is Donated for ${eventName} </h3>
+            <p class='bg-slate-100 border rounded p-2'>Date : ${date}</p>`
             document.getElementById('history-section').appendChild(historyItem);
 
         }
@@ -82,8 +82,8 @@ document.getElementById('btn-flood1').addEventListener('click',function(){
             let inputAmount = parseFloat(getValueById('input-protest'));
             let donatedBalance = parseFloat(getTextById('protest-balance'));
             const eventName = 'Aid for Injured in the Quota Movement';
-            if(isNaN(inputAmount)){
-                alert('Not a number');
+            if(isNaN(inputAmount) || inputAmount<=0){
+                alert('Invaild Amount');
                 return
             }else if(balance<inputAmount){
                     alert ('Insufficient Balance');
@@ -99,8 +99,8 @@ document.getElementById('btn-flood1').addEventListener('click',function(){
                
                 const historyItem = document.createElement('div');
                 historyItem.classList.add('border', 'p-4', 'rounded-xl', 'px-4', 'space-y-2');
-                historyItem.innerHTML=` <h3 class='font-bold'> ${inputAmount} is Donated at ${eventName} </h3>
-                <p>Date : ${date}</p>`
+                historyItem.innerHTML=` <h3 class='font-bold'> ${inputAmount} Taka is Donated for ${eventName} </h3>
+                <p class='bg-slate-100 border rounded p-2'>Date : ${date}</p>`
                 document.getElementById('history-section').appendChild(historyItem);
             }
 })
